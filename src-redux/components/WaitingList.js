@@ -13,18 +13,35 @@ const WaitingItem = ({ text, entered, onEnter, onLeave }) => {
   );
 };
 
-const WaitingList = ({ waitingList, onEnter, onLeave }) => {
+const WaitingList = ({ 
+  input,
+   waitingList,
+    onChange,
+     onSubmit,
+      onEnter,
+       onLeave
+ }) => {
+  //  데이터를 컴포넌트 리스트로 변환
+  const waitingItems = waitingList.map(w=>(
+    <WaitingItem 
+    key={w.id}
+    text={w.name}
+    entered={w.entered}
+    id={w.id}
+    onEnter={()=>onEnter(w.id)}
+    onLeave={()=>onLeave(w.id)}
+    />
+  ))
   return (
     <div className="WaitingList">
       <h2>대기자 명단</h2>
-      <form>
-        <input />
+      {/* form과 input에 이벤트 및 값 설정 */}
+      <form onSubmit={onSubmit}>
+        <input value={input} onChange={onChange} />
         <button>등록</button>
       </form>
       <ul>
-        <WaitingItem text="홍길동" entered />
-        <WaitingItem text="콩쥐" />
-        <WaitingItem text="팥쥐" />
+        {waitingItems}
       </ul>
     </div>
   );
