@@ -1,4 +1,4 @@
-import { KAKAO_AUTH_URL } from "../../../kakaologin/Kakao";
+import { KAKAO_AUTH_URL } from "./kakaologin/Kakao";
 import React from 'react';
 
 const Login = () => {
