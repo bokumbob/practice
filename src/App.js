@@ -4,6 +4,10 @@ import './App.css';
 import Sadas from './axios/sadas';
 import Mt from './material-icon/Mt';
 import RsTest from './react-spring/RsTest';
+import ReactRouter from './react-router/ReactRouter'
+import Hoc from './hoc/Hoc.js';
+import Hoc_copy from './hoc/Hoc_copy.js';
+import Memo from './memo/Memo';
 // import Auth from './axios/Auth';
 // import Login from './oauth/callback/kakao/Login';
 // import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
@@ -22,7 +26,13 @@ function App() {
       {/* <Login /> */}
       {/* <Auth /> */}
       {/* <RsTest /> */}
-      <Mt />
+      {/* <Mt /> */}
+      {/* <ReactRouter /> */}
+
+
+      {/* <Hoc /> */}
+      {/* <Hoc_copy /> */}
+      <Memo />
     </div>
   );
 }
