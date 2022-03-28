@@ -8,6 +8,10 @@ import ReactRouter from './react-router/ReactRouter'
 import Hoc from './hoc/Hoc.js';
 import Hoc_copy from './hoc/Hoc_copy.js';
 import Memo from './memo/Memo';
+import Context from './comtext/TContext';
+import Ex from './comtext/Ex';
+import Dialog from './Portal/Dialog';
+import PropsTypes from './propType/PropsTypes';
 // import Auth from './axios/Auth';
 // import Login from './oauth/callback/kakao/Login';
 // import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
@@ -32,7 +36,11 @@ function App() {
 
       {/* <Hoc /> */}
       {/* <Hoc_copy /> */}
-      <Memo />
+      {/* <Memo /> */}
+      {/* <Context /> */}
+      {/* <Ex /> */}
+      {/* <Dialog /> */}
+      <PropsTypes />
     </div>
   );
 }
