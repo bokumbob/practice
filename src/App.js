@@ -12,6 +12,8 @@ import Context from './comtext/TContext';
 import Ex from './comtext/Ex';
 import Dialog from './Portal/Dialog';
 import PropsTypes from './propType/PropsTypes';
+// import Moment from './library/Moment';
+import Day from './library/Day';
 // import Auth from './axios/Auth';
 // import Login from './oauth/callback/kakao/Login';
 // import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
@@ -40,7 +42,9 @@ function App() {
       {/* <Context /> */}
       {/* <Ex /> */}
       {/* <Dialog /> */}
-      <PropsTypes />
+      {/* <PropsTypes /> */}
+      {/* <Moment /> */}
+      <Day />
     </div>
   );
 }
